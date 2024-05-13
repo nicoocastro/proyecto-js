@@ -9,8 +9,19 @@
 <body>
     <div class="container">
         <h1>Simulador de Plazo Fijo</h1>
+        <input type="number" id="montoInversion" placeholder="Ingrese monto a invertir">
         <button id="invertirBtn">Invertir</button>
         <button id="verInversionesBtn">Ver Inversiones</button>
+        <div id="resultadoInversion"></div>
+        <div id="listadoInversiones"></div>
+
+        <div id="confirmacionModal" class="modal">
+            <div class="modal-content">
+                <p id="modalText">¿Está seguro de que desea realizar esta inversión?</p>
+                <button id="confirmBtn">Confirmar</button>
+                <button id="cancelBtn">Cancelar</button>
+            </div>
+        </div>
     </div>
 
     <script src="simulador.js"></script>
